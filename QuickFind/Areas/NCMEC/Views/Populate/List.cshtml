@@ -1,0 +1,167 @@
+﻿@model IEnumerable<QuickFind.Areas.NCMEC.Models.NCMECChild>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApproxAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CaseNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CaseType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MiddleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasThumbnail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InMonth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsChild)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LangId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MissingCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MissingCountry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MissingCounty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MissingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MissingState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrgName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrgPrefix)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PosterTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Race)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SeqNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThumbnailUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApproxAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CaseNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CaseType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiddleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasThumbnail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InMonth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsChild)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LangId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MissingCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MissingCountry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MissingCounty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MissingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MissingState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrgName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrgPrefix)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PosterTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Race)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SeqNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThumbnailUrl)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
